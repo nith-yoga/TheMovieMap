@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Movie Map</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon/logo.ico">
+        <link rel="stylesheet" type="text/css" href="../assets/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Limelight&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Limelight&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="../scripts/index.js"></script>
+    </head>
+    <header>
+        <!-- Main Navigation/Header Bar -->
+        <div class="banner">
+            <h1 class="title">THE MOVIE MAP</h1>
+        </div>
+    </header>
+<body>
+    <main>
+        <!-- ENTRY FORM -->
+        <h3 id="enter">Pick a country:</h3>
+        <div class="form">
+        <input type="text" id="userin" placeholder="Type in a country name here">
+        <button type="submit" id="submit">Recommend me a movie!</button>
+        </div>
+        <!-- This is where the recommendation will appear -->
+        <div id="recommendation">
+            <button id="next">Seen it!</button>
+            <h4 id="movie-title"></h4>
+            <p id="movie-overview"></p>
+            <img id="movie-poster" src="" alt="Movie Poster" style="display: none;">
+            
+        </div>
+    </main>
+</body>
+</html>

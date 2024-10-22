@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title The Movie Map
+        link(rel="icon" type="image/x-icon" href="/assets/favicon/logo.ico")
+        link(rel="stylesheet" type="text/css" href="/css/styles.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Limelight&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet")
+    body(style=`background-image: url('${backgroundImage}'); background-size: cover; background-position: center; background-attachment: fixed;`)
+        header
+            .banner
+                h1.title THE MOVIE MAP
+        .background
+        main
+            h3#enter Pick a country:
+            .form
+                input(type="text" id="userin" placeholder="Type in a country name here")
+                button(type="submit" id="submit") Recommend me a movie!
+            #recommendation
+                button#next Seen it!
+                h4#movie-title
+                p#movie-overview
+                img#movie-poster(src="" alt="Movie Poster" style="display: none;")
+        script(src="/js/index.js")
